@@ -18,7 +18,7 @@
     --montserrat: "Montserrat", sans-serif;
     --nunito: "Nunito Sans", sans-serif;
     --roboto: "Roboto", sans-serif;
-    --spectral: "Spectracl SC", serif;
+    --spectral: "Spectral SC", serif;
 }
 
 /* Universal Styles */
@@ -71,6 +71,26 @@ section#body-container
 .rounded
 {
     border-radius: 50%;
+}
+
+.header-button
+{
+    background-color: var(--red);
+    color: var(--white);
+    padding: 10px 40px;
+    font-size: 130%;
+    border-radius: 30px;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.header-button:hover
+{
+    opacity: 0.7;
+}
+
+.header-button:active
+{
+    background-color: var(--lightRed);
 }
 
 /* Dashboard Styles */
@@ -126,7 +146,7 @@ header#header
 
 #search-bar-container
 {
-    padding: 50px;
+    padding: 25px;
 }
 
 div#searchbar
@@ -180,7 +200,43 @@ h1#name
     cursor: pointer;
 }
 
+div#intro
+{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+}
+
+div#user-description
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 50px;
+}
+
+div#user-welcoming
+{
+    font-family: var(--roboto);
+}
+
+div#header-btn-container
+{
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
 img#profile-pic
 {
-    width: 150px;
+    width: 120px;
+}
+
+/* Body Styles */
+section#body-container
+{
+    
 }
