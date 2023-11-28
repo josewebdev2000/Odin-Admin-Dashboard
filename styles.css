@@ -1,0 +1,119 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Enriqueta&family=Gelasio&family=Lato:wght@300&family=Montserrat&family=Nunito+Sans:opsz@6..12&family=Roboto:wght@400;500&family=Spectral+SC:wght@200&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+/* Global Variables */
+:root
+{
+    --black: #000000;
+    --darkGray: #2B2D42;
+    --gray: #8D99AE;
+    --lightGray: #EDF2F4;
+    --lightRed: #EF233C;
+    --red: #D90429;
+    --white: #FFFFFF;
+    --enriqueta: "Enriqueta", serif;
+    --gelasio: "Gelasio", serif;
+    --lato: "Lato", serif;
+    --montserrat: "Montserrat", sans-serif;
+    --nunito: "Nunito Sans", sans-serif;
+    --roboto: "Roboto", sans-serif;
+    --spectral: "Spectracl SC", serif;
+}
+
+/* Universal Styles */
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* General Styles */
+body
+{
+    display: grid;
+    grid-template-columns: .15fr .85fr;
+    height: 100vh;
+}
+
+aside#dashboard, main#main-container
+{
+    height: 100%;
+}
+
+main#main-container
+{
+    display: grid;
+    grid-template-rows: .25fr .75fr;
+}
+
+section#body-container
+{
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+}
+
+.icon-content-flexy
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: .2fr .8fr;
+    align-items: center;
+}
+
+/* Dashboard Styles */
+aside#dashboard
+{
+    background-color: var(--darkGray);
+    padding: 20px;
+    color: var(--white);
+    font-family: var(--roboto);
+}
+
+.white-link
+{
+    color: var(--white);
+}
+
+.white-link:hover
+{
+    color: var(--lightGray);
+}
+
+.white-link:active
+{
+    color: var(--gray);
+}
+
+h1.dashboard-title
+{
+    font-size: 2rem;
+}
+
+#dashboard-title-container
+{
+    margin-bottom: 40px;
+}
+
+.nav-links > *
+{
+    margin-bottom: 20px;
+}
+
+#nav-links-1
+{
+    margin-bottom: 80px;
+}
+
+/* Header Styles */
+header#header
+{
+    display: grid;
+    grid-template-rows: 0.4fr 0.6fr
+}
+
+#search-bar-container
+{
+    
+}
