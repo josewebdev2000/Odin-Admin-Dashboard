@@ -37,20 +37,16 @@ body
     height: 100vh;
 }
 
-aside#dashboard, main#main-container
-{
-    height: 100%;
-}
-
 main#main-container
 {
     display: grid;
-    grid-template-rows: .25fr .75fr;
+    grid-template-rows: 30% 70%;
 }
 
 section#body-container
 {
     display: grid;
+    background-color: var(--lightGray);
     grid-template-columns: 0.7fr 0.3fr;
 }
 
@@ -91,6 +87,12 @@ section#body-container
 .header-button:active
 {
     background-color: var(--lightRed);
+}
+
+.announcer
+{
+    font-family: var(--montserrat);
+    font-size: 130%;
 }
 
 /* Dashboard Styles */
@@ -141,7 +143,7 @@ h1.dashboard-title
 header#header
 {
     display: grid;
-    grid-template-rows: 0.4fr 0.6fr
+    grid-template-rows: 0.4fr 0.6fr;
 }
 
 #search-bar-container
@@ -236,7 +238,53 @@ img#profile-pic
 }
 
 /* Body Styles */
-section#body-container
+#articles-container
 {
-    
+    padding: 25px;
+}
+
+.announcements
+{
+    padding: 25px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
+    gap: 25px;
+}
+
+.announcement
+{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+    justify-content: space-around;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.announcement-title
+{
+    font-family: var(--nunito);
+}
+
+.announcement-content
+{
+    font-family: var(--roboto);
+    color: var(--darkGray);
+}
+
+.announcement-icons
+{
+    align-self: flex-end;
+}
+
+.announcement-button
+{
+    padding: 10px;
+}
+
+.announcement-icon
+{
+    font-size: 150%;
 }
