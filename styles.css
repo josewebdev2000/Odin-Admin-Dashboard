@@ -58,6 +58,11 @@ section#body-container
     align-items: center;
 }
 
+.big-icon-flexy
+{
+    gap: 15px;
+}
+
 .button
 {
     cursor: pointer;
