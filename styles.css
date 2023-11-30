@@ -40,8 +40,7 @@ body
 main#main-container
 {
     display: grid;
-    grid-template-rows: 30% 70%;
-    overflow-y: hidden;
+    grid-template-rows: 25% 75%;
 }
 
 section#body-container
