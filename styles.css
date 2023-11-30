@@ -41,6 +41,7 @@ main#main-container
 {
     display: grid;
     grid-template-rows: 30% 70%;
+    overflow-y: hidden;
 }
 
 section#body-container
@@ -238,7 +239,7 @@ img#profile-pic
 }
 
 /* Body Styles */
-#articles-container
+#articles-container, #notifications-container, #upcoming-tournaments-container
 {
     padding: 25px;
 }
@@ -263,12 +264,12 @@ img#profile-pic
     padding: 20px;
 }
 
-.announcement-title
+.announcement-title, .notification-title
 {
     font-family: var(--nunito);
 }
 
-.announcement-content
+.announcement-content, .notification-content
 {
     font-family: var(--roboto);
     color: var(--darkGray);
@@ -287,4 +288,21 @@ img#profile-pic
 .announcement-icon
 {
     font-size: 150%;
+}
+
+.notifications
+{
+    padding: 50px;
+    background-color: var(--white);
+    display: flex;
+    flex-flow: column nowrap;
+    grid-gap: 20px;
+    border-radius: 20px;
+    margin: 25px;
+    box-shadow: 5px 3px 4px 2px var(--darkGray);
+}
+
+.notifications hr
+{
+    color: var(--lightGray);
 }
